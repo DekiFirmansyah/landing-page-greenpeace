@@ -19,25 +19,26 @@
 
 <body>
     <header>
-        <div class="navbar">
-            <div class="container">
-                <div class="box-navbar">
-                    <div class="logo">
-                        <h1>Greenpeace</h1>
+        <nav>
+            <div class="navbar">
+                <div class="container">
+                    <div class="box-navbar">
+                        <div class="logo">
+                            <h1>Greenpeace</h1>
+                        </div>
+                        <ul class="menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#artikel">Artikel</a></li>
+                            <li><a href="#program">Program Kami</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <a href="https://www.greenpeace.org/indonesia/"><button>Donasi</button></a>
+                        </ul>
+                        <i class="fa-solid fa-bars menu-bar"></i>
                     </div>
-                    <ul class="menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#artikel">Artikel</a></li>
-                        <li><a href="#program">Program Kami</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <a href="#donate"><button>Donasi</button></a>
-                    </ul>
-                    <i class="fa-solid fa-bars menu-bar"></i>
                 </div>
             </div>
-        </div>
-
-        <div class="hero">
+        </nav>
+        <div class="hero" id="home">
             <div class="container">
                 <div class="box-hero">
                     <div class="box">
@@ -45,12 +46,13 @@
                             Tentang <br />
                             Greenpeace.
                         </h1>
-                        <p>Satu orang mungkin tidak bisa mengubah dunia, tapi satu tindakan bisa mempengaruhi banyak
+                        <p id="description">Satu orang mungkin tidak bisa mengubah dunia, tapi satu tindakan bisa
+                            mempengaruhi banyak
                             orang.
                             Bersama-sama, kita dapat menciptakan dunia yang lebih hijau, bersih, dan aman untuk semua.
                             Greenpeace ada untuk menjaga bumi, dukungan anda semangat kami, Ikuti Program dan Bergabung
                             Dengan Kami.</p>
-                        <a href="https://skilvul.com"><button>Tentang Kami</button></a>
+                        <a id="link" href="https://skilvul.com"><button>Tentang Kami</button></a>
                     </div>
                     <div class="box">
                         <img src="assets/img/hero-boy.png" alt="" />
@@ -68,7 +70,7 @@
         </div>
         <div class="content-container">
             <div class="card">
-                <img src="assets//img/artikel1.png" alt="artikel1">
+                <img src="assets/img/artikel1.png" alt="artikel1">
                 <div class="card-body">
                     <h3>Policy Brief Transformasi Transportasi Jakarta.</h3>
                     <p>Berdasarkan hasil kajian, ditemukan bahwa kontributor
@@ -112,7 +114,7 @@
                     </a>
                 </div>
             </div>
-            <a href="https://skilvul.com"><button>Artikel Lainnya</button></a>
+            <a href="https://www.greenpeace.org/indonesia/"><button>Artikel Lainnya</button></a>
         </div>
     </section>
     <section class="konten" id="program">
@@ -123,11 +125,11 @@
         </div>
         <div class="content-container">
             <div class="card">
-                <img src="assets//img/program1.png" alt="program1">
+                <img src="assets/img/program1.png" alt="program1">
                 <div class="card-body">
                     <h3>Menanam Untuk Masa Depan.</h3>
-                    <p>Penetapan Hari Menanam Pohon Indonesia tak lepas dari kesadaran 
-                        akan pentingnya menjaga kelestarian hutan, karena dampak dan perubahan 
+                    <p>Penetapan Hari Menanam Pohon Indonesia tak lepas dari kesadaran
+                        akan pentingnya menjaga kelestarian hutan, karena dampak dan perubahan
                         iklim yang kini menjadi ....</p>
                 </div>
                 <div class="card-footer">
@@ -142,7 +144,7 @@
                 <div class="card-body">
                     <h3>Kerja Bakti Upaya Penanggulangan Sampah</h3>
                     <p>kerja bakti pembersihan saluran drainase ini sangat penting untuk
-                         dilakukan demi kebersihan lingkungan dan keselamatan warga ....</p>
+                        dilakukan demi kebersihan lingkungan dan keselamatan warga ....</p>
                 </div>
                 <div class="card-footer">
                     <p>March 20th 2023</p>
@@ -155,7 +157,7 @@
                 <img src="assets/img/program3.png" alt="program3">
                 <div class="card-body">
                     <h3>Pembersihan Sampah Diarea Wisata Tepi Pantai</h3>
-                    <p>Pengunjung wisata pantai trikora setiap tahunnya meningkat namun 
+                    <p>Pengunjung wisata pantai trikora setiap tahunnya meningkat namun
                         memiliki masalah terkait kesadaran pengunjung yang belum merata untuk ....</p>
                 </div>
                 <div class="card-footer">
@@ -165,7 +167,7 @@
                     </a>
                 </div>
             </div>
-            <a href="https://skilvul.com"><button>Program Lainnya</button></a>
+            <a href="https://www.greenpeace.org/indonesia/"><button>Program Lainnya</button></a>
         </div>
     </section>
     <section class="contact" id="contact">
@@ -197,36 +199,42 @@
                         <tr>
                             <td><input type="checkbox" id="status" name="status" placeholder="Masukkan Nama"
                                     autocomplete="off" />
-                                <label class="status" for="status">Dengan ini saya menyatakan data yang diisi
+                                <label class="status" for="status" id="check">Dengan ini saya menyatakan data yang diisi
                                     pada form ini adalah benar dan telah sesuai</label>
                             </td>
                         </tr>
                     </table>
-                    <div id="warning"><button id="submit-form">Submit</button></div>
+                    <button id="submit-form" type="submit">Submit</button>
+                    <div id="warning"></div>
                 </form>
+
             </div>
         </div>
     </section>
-    <div class="footer">
-        <div class="container">
-          <div class="box-footer">
-            <div class="box">
-              <h2>Greenpeace</h2>
-              <p>Satu orang mungkin tidak bisa mengubah dunia, tapi satu tindakan bisa mempengaruhi banyak orang.</p>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="box-footer">
+                    <div class="box">
+                        <h2>Greenpeace</h2>
+                        <p>Satu orang mungkin tidak bisa mengubah dunia, tapi satu tindakan bisa mempengaruhi banyak
+                            orang.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>Menu</h3>
+                        <a href="#home">Home</a>
+                        <a href="#artikel">Artikel</a>
+                        <a href="#program">Program Kami</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="box">
+                        <p>&copy; Copyright by <span>Greenpeace</span> All Rights Reserved 2023, Indonesia</p>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-              <h3>Menu</h3>
-              <a href="#home">Home</a>
-              <a href="#artikel">Artikel</a>
-              <a href="#program">Program Kami</a>
-              <a href="#contact">Contact</a>
-            </div>
-            <div class="box">
-              <p>&copy; Copyright by <span>Greenpeace</span> All Rights Reserved 2023, Indonesia</p>
-            </div>
-          </div>
         </div>
-      </div>
+    </footer>
     <script src="assets/script.js"></script>
 </body>
 
